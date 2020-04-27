@@ -1,0 +1,163 @@
+<!doctype html>
+<html　lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>診断テスト</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="css/reset.css"><!--リセット-->
+<link rel="stylesheet" href="css/style.css">
+<!--jQuery本体-->
+<script src="jquery.js"></script>
+<!--自分で作るjQueryプログラム-->
+<script src="selfjs.js"></script>
+<div id="wrapper">
+	<div class="question">
+                <h1>診断テスト</h1>
+<!--１５の質問 -->    
+		         <ul>
+                    <li>
+                        <span>Q1. とてもいい人だと思っていたのに、幻滅したり、嫌いになったりすることがありますか。</span><br />
+						      <input type="radio" name="q01" id="q01" class="typeA"/>
+                                    <label for="q01" class="s-label">YES</label>
+                              <input type="radio" name="q01" id="q02" class="typeE"/>
+					                <label for="q02" class="s-label">NO</label><br />
+                    </li>
+					
+                    <li>
+                        <span>Q2. よくイライラしたり、落ち込んだりする方ですか。</span><br />
+                              <input type="radio" name="q02" id="q03" class="typeA"/>
+                                    <label for="q03" class="s-label">YES</label>
+						      <input type="radio" name="q02" id="q04" class="typeB"/>
+                                    <label for="q04" class="s-label">NO</label><br />
+                    </li>
+                    <li>
+                        <span>Q3. 自分にはあまり取り柄がないと思うことがありますか。。</span><br />
+                              <input type="radio" name="q03" id="q05" class="typeA"/>
+                                    <label for="q05" class="s-label">YES</label>
+						      <input type="radio" name="q03" id="q06" class="typeE"/>
+                                    <label for="q06" class="s-label">NO</label><br />
+                    </li>
+                   
+                    <li>
+                        <span>Q4. 人の観察をしたり、周りのことを気に留める方だ。</span><br />
+						      <input type="radio" name="q04" id="q07" class="typeB"/>
+                                    <label for="q07" class="s-label">YES</label>
+						      <input type="radio" name="q04" id="q08" class="typeD"/>
+                                    <label for="q08" class="s-label">NO</label><br />
+                    </li>
+                    <li>
+					    <span>Q5. 拒絶されるのではないかと、不安になることがありますか。</span><br />
+						      <input type="radio" name="q05" id="q09" class="typeB"/>
+                                    <label for="q09" class="s-label">YES</label>
+						      <input type="radio" name="q05" id="q10" class="typeA"/>
+                                    <label for="q10" class="s-label">NO</label><br />
+                    </li>
+					<li>
+				        <span>Q6.良いところより、悪いところの方が気になってしまいますか。</span><br />
+						      <input type="radio" name="q06" id="q11" class="typeB"/>
+                                    <label for="q11" class="s-label">YES</label>
+						      <input type="radio" name="q06" id="q12" class="typeC"/>
+                                    <label for="q12" class="s-label">NO</label><br />
+                    </li>
+					<li>
+			            <span>Q7.人に頼らずに、決断したり行動したりできる方ですか。</span><br />
+						      <input type="radio" name="q07" id="q13" class="typeC"/>
+                                    <label for="q13" class="s-label">YES</label>
+						      <input type="radio" name="q07" id="q14" class="typeA"/>
+                                    <label for="q14" class="s-label">NO</label><br />
+                    </li>
+					<li>
+		                <span>Q8.自分はあまり人から愛されない存在だと思いますか。</span><br />
+						      <input type="radio" name="q08" id="q15" class="typeC"/>
+                                    <label for="q15" class="s-label">YES</label>
+						      <input type="radio" name="q08" id="q16" class="typeB"/>
+                                    <label for="q16" class="s-label">NO</label><br />
+					<li>
+                  	    <span>Q9. 何か嫌いなことがあると、引きずってしまう方ですか。</span><br />
+						      <input type="radio" name="q09" id="q17" class="typeC"/>
+                                    <label for="q17" class="s-label">YES</label>
+						      <input type="radio" name="q09" id="q18" class="typeB"/>
+                                    <label for="q18" class="s-label">NO</label><br />
+                    </li>
+					<li>
+                        <span>Q10. 親しい対人関係は、あなたにとって重要ですか。</span><br />
+						      <input type="radio" name="q10" id="q19" class="typeA"/>
+                                    <label for="q19" class="s-label">YES</label>
+						      <input type="radio" name="q10" id="q20" class="typeB"/>
+                                    <label for="q20" class="s-label">NO</label><br />
+                    </li>
+					<li>
+                        <span>Q11. いつも冷静でクールな方ですか。</span><br />
+						      <input type="radio" name="q11" id="q21" class="typeD"/>
+                                    <label for="q21" class="s-label">YES</label>
+						      <input type="radio" name="q11" id="q22" class="typeA"/>
+                                    <label for="q22" class="s-label">NO</label><br />
+                    </li>
+					<li>
+                        <span>Q12. ０から１を生み出すことに向いていると思う。</span><br />
+						      <input type="radio" name="q12" id="q23" class="typeD"/>
+                                    <label for="q23" class="s-label">YES</label>
+						      <input type="radio" name="q12" id="q24" class="typeB"/>
+                                    <label for="q24" class="s-label">NO</label><br />
+                    </li>
+					<li>
+                        <span>Q13. 課題に挑戦し、クリアしたり、多少しんどくてもトライする事が楽しい。</span><br />
+						      <input type="radio" name="q13" id="q25" class="typeE"/>
+                                    <label for="q25" class="s-label">YES</label>
+						      <input type="radio" name="q13" id="q26" class="typeA"/>
+                                    <label for="q26" class="s-label">NO</label><br />
+                    </li>
+                    
+					<li>
+                        <span>Q14. つまずくと、気持ちが萎えるどころか燃え上がってくる方だ。</span><br />
+						      <input type="radio" name="q14" id="q27" class="typeE"/>
+                                    <label for="q27" class="s-label">YES</label>
+						      <input type="radio" name="q14" id="q28" class="typeB"/>
+                                    <label for="q28" class="s-label">NO</label><br />
+                    </li>
+                 
+					<li>
+						<span>Q15. 前へ、前へと歩みを進める事が、とても楽しいと感じる。</span><br />
+						      <input type="radio" name="q15" id="q29" class="typeE"/>
+                                    <label for="q29" class="s-label">YES</label>
+						      <input type="radio" name="q15" id="q30" class="typeD"/>
+                                    <label for="q30" class="s-label">NO</label><br />
+                    </li>
+                   </li>
+                </ul>
+<button id="button">診断する</button>
+		</div>
+<!--未回答の質問 -->
+        <div class="result noAns">
+                <h2>
+                未回答の問題があります
+                </h2>
+            </div>
+
+<!--質問の答え-->    
+	<div class="result resultA">
+                <h2>あなたの愛着スタイルは<br><strong>安定型</strong></h2>
+                <p>愛着不安、愛着回避とも低く、もっとも安定したタイプ</p>
+            </div>
+     <div class="result resultB">
+                <h2>あなたの愛着スタイルは<br><strong>不安型</strong></h2>
+                <p>愛着不安が強く、対人関係に敏感なタイプ</p>
+            </div>
+      <div class="result resultC">
+                <h2>あなたの愛着スタイルは<br><strong>回避型</strong></h2>
+                <p>愛着回避が強く、親密な関係になりにくいタイプ</p>
+            </div>
+	   <div class="result resultD">
+                <h2>あなたの愛着スタイルは<br><strong>回避－安定型</strong></h2>
+                <p>愛着不安が強いが、ある程度適応力があるタイプ</p>
+            </div>
+        <div class="result resultE">
+                <h2>あなたの愛着スタイルは<br><strong>未解決型</strong></h2>
+                <p>愛着不安、愛着回避とも強く、傷つくことに敏感で、疑り深くなりやすいタイプ</p>
+            </div>
+	</div>
+	
+</body>
+</html>
