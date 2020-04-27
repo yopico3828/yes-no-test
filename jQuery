@@ -1,0 +1,55 @@
+   console.log( "test" );
+
+        $(function(){
+		                //ボタンがクリックされた時
+                $("button").click(function(){
+                    //一度結果を非表示にする
+                    $(".result").hide();
+					
+	　　　　　　　　　　　　　　　　　　　　alert("クリックされました");
+
+
+                    //問題数を取得
+                    var qNum = jQuery(".ul li").length;
+
+                    if( $("ul li input:checked").length < qNum ){
+                        //全てチェックしていなかったらアラートを出す
+                        $(".noAns").fadeIn();
+                    } else {
+                        //チェックされているinputの数を取得
+                        var typeANum = $(".typeA:checked").length,
+                            typeBNum = $(".typeB:checked").length,
+                            typeCNum = $(".typeC:checked").length,
+                            typeDNum = $(".typeD:checked").length,
+                            typeENum = $(".typeE:checked").length,};
+                        //最大のタイプの個数
+                            maxType = Math.max(typeANum, typeBNum, typeCNum, typeDNum, typeENum);
+ 
+                          $(".resultPoint").fadeIn().html('<h2>あなたのポイント<br/>aタイプ:'+typeANum +'<br/>aタイプ:'+ typeBNum +'<br/>Bタイプ:'+ typeCNum +'<br/>Cタイプ:'+ typeDNum + '<br/>dタイプ:'+ typeENum + <br/>Eタイプ:'<br/>　<canvas id="myChart"></canvas>');
+						
+					
+                        }
+                     )}
+	//計算式
+						
+            "if(typeANum >= typeBNum  && typeANum >= typeCNum && typeANum >= typeDNum && typeANum >= typeENum ) {
+            //Aタイプを表示
+						$(".resultA").fadeIn()}
+								
+           	} else if(typeBNum > typeANum  typeBNum > typeCNum typeBNum > typeDNum typeBNum > typeENum) {
+            //Bタイプを表示
+            $(".resultB").fadeIn()}
+								
+            } else if(typeCNum > typeANum typeCNum > typeBNum typeCNum > typeDNum && typeCNum > typeENum) {
+						//Cタイプを表示
+            $(".resultC").fadeIn()}
+								
+            } else if(typeDNum > typeANum typeDNum > typeBNum && typeDNum > typeCNum && typeDNum > typeENum) {
+						//Dタイプを表示
+						$(".resultD").fadeIn()}
+								
+						} else if(typeENum > typeANum typeENum > typeBNum && typeENum > typeCNum && typeENum > typeDNum) {
+            //Eタイプを表示
+						$(".resultE").fadeIn()}
+							}
+								)}
