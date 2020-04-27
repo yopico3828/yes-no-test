@@ -1,4 +1,4 @@
-   console.log( "test" );
+   //Lish様の指摘によりconsole.log( "test" );は削除
 
         $(function(){
 		                //ボタンがクリックされた時
