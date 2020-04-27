@@ -1,0 +1,260 @@
+body {
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.s-label {
+  position: relative;
+  padding: 0 0 0 42px;
+}
+
+.s-label:after,
+.s-label:before {
+  position: absolute;
+  z-index: 1000000;
+  content: "";
+  display: block;
+  top: 50%;
+}
+
+.s-label:after {
+  left: 15px;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.s-label:before {
+  left: 20px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: #0171bd;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+input[type=radio]:checked+.s-label:before {
+  opacity: 1;
+}
+
+.s-label:hover:after {
+  border-color: #0171bd;
+}
+
+#wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+#wrapper h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#wrapper ul {
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#wrapper ul li {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  color: black;
+  /*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;
+  /*線*/
+  border-radius: 10px;
+  /*角の丸み*/
+  margin-bottom: 10px;
+}
+
+#wrapper ul li:last-child {
+  margin-bottom: 0;
+}
+
+/*#wrapper ul li span {
+    display: inline-block;
+    width: 350px;
+}*/
+
+#wrapper button {
+  background: #5c90d2;
+  width: 250px;
+  display: block;
+  margin: 20px auto 30px;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: none;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#wrapper .result {
+  padding: 20px;
+  border: 3px solid #f1f1f1;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: none;
+}
+
+#wrapper .result h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#wrapper .result h2 strong {
+  font-size: 24px;
+}
+
+
+
+/*reset css*/
+
+
+
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+input[type=radio ] {
+  display: none;
+}
+
+.s-label {
+  position: relative;
+  padding: 0 0 0 42px;
+}
+
+.s-label:after,.s-label:before {
+  position: absolute;
+  z-index: 1000000;
+  content: "";
+  display: block;
+  top: 50%;
+}
+
+.s-label:after {
+  left: 15px;
+  margin-top: -10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.s-label:before {
+  left: 20px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: #0171bd;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+input[type=radio]:checked + .s-label:before {
+  opacity: 1;
+}
+
+.s-label:hover:after {
+  border-color: #0171bd;
+}
+
+#wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+#wrapper h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#wrapper ul {
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#wrapper ul li {
+      padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: black; /*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3; /*線*/
+    border-radius: 10px; /*角の丸み*/
+    margin-bottom: 10px;
+}
+
+#wrapper ul li:last-child {
+    margin-bottom: 0;
+}
+
+/*#wrapper ul li span {
+    display: inline-block;
+    width: 350px;
+}*/
+
+#wrapper button {
+    background: #5c90d2;
+    width: 250px;
+    display: block;
+    margin: 20px auto 30px;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+    color: #fff;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#wrapper .result {
+    padding: 20px;
+    border: 3px solid #f1f1f1;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: none;
+}
+
+#wrapper .result h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#wrapper .result h2 strong {
+    font-size: 24px;
+}
